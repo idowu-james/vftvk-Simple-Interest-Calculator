@@ -16,7 +16,7 @@ function compute()
     }
 
     else{
-        document.getElementById("result").innerHTML="<b>If</b> you deposit: "+principal+",\<br\><b>At</b> an interest rate of: "+rate+"%\<br\><b>You</b> will receive an Interest of: <mark>"+interest+"</mark>,\<br\><b>In</b> the year: <mark>"+year+"</mark>\<br\>"   
+        document.getElementById("result").innerHTML="<b>If</b> you deposit: <mark>"+principal+"</mark>,\<br\><b>At</b> an interest rate of: <mark>"+rate+"%</mark>\<br\><b>You</b> will receive an Interest of: <mark>"+interest+"</mark>,\<br\><b>In</b> the year: <mark>"+year+"</mark>\<br\>"   
     }
 
      
@@ -29,12 +29,3 @@ function updateRate()
     document.getElementById("rate_val").innerText=rateval;
 }
 
-//Validation for only positive values for Principal
-function validatePrincipal() {
-    var principal = document.getElementById("principal").value;    
-    if (principal == 0 || principal < 0) {
-        alert("Enter a positive number");
-        document.getElementById("principal").focus();
-    }
-}
-        
